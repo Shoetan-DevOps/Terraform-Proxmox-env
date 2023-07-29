@@ -1,0 +1,8 @@
+containers:
+- hostname: ansible01
+  size: 8G
+  # ip: 
+  # target_node
+  # ostemplate
+  #  storage: 
+
