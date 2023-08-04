@@ -1,8 +1,10 @@
-containers:
-- hostname: ansible01
-  size: 8G
-  # ip: 
-  # target_node
-  # ostemplate
-  #  storage: 
 
+ansible01:
+  size: 8G
+  cpu: 1
+  mem: 3048
+  ip: 10.0.0.145/24
+  ostemplate: "local:vztmpl/debian-11-turnkey-ansible_17.1-1_amd64.tar.gz"
+  description: "ansible host maser" 
+  #  storage: 
+  # target_node:

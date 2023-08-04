@@ -1,3 +1,5 @@
 locals {
-    tokens = yamldecode(file("./token.yaml"))
+  tokens = yamldecode(file("./token.yaml"))
+  lxc    = yamldecode(file("./lxc.yaml"))
+  
 }
