@@ -1,0 +1,7 @@
+#state file
+- terraform state list  
+- terraform state show 'resource.target'
+
+#specific resource
+- terraform destroy -target='resource.target' --auto-approve
+- terraform apply -target='resource.target' --auto-approve

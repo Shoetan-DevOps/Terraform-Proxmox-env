@@ -1,6 +1,7 @@
 resource "proxmox_lxc" "containers" {
   for_each     = local.lxc
-  
+
+  vmid = each.value.vm_id
   description  = each.value.description
   unprivileged = true
   target_node  = "pve01"
@@ -27,3 +28,4 @@ resource "proxmox_lxc" "containers" {
     firewall = true
   }
 }
+

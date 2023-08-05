@@ -26,5 +26,5 @@ crash.log
 #ignore token
 token.yaml
 
-#ignore rsa
-id_rsa*
+#ignore vault directory
+**/vault/*

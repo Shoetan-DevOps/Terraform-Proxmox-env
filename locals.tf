@@ -1,5 +1,5 @@
 locals {
-  tokens = yamldecode(file("./token.yaml"))
+  tokens = yamldecode(file("./vault/token.yaml"))
   lxc    = yamldecode(file("./lxc.yaml"))
   
 }

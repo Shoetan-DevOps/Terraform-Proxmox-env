@@ -1,10 +1,20 @@
 
 ansible01:
+  vm_id: 1000
   size: 8G
-  cpu: 1
+  cpu: 2
   mem: 3048
   ip: 10.0.0.145/24
   ostemplate: "local:vztmpl/debian-11-turnkey-ansible_17.1-1_amd64.tar.gz"
-  description: "ansible host maser" 
+  description: "ansible host master" 
   #  storage: 
   # target_node:
+
+paste01:
+  vm_id: 1001
+  size: 8G
+  cpu: 1
+  mem: 1048
+  ip: 10.0.0.146/24
+  ostemplate: "local:vztmpl/ubuntu-22.04-standard_22.04-1_amd64.tar.zst"
+  description: "copy server to allow paste + scp" 
