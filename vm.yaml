@@ -1,0 +1,12 @@
+
+wireguard01:
+  vm_id: 2000
+  size: 8G
+  cpu: 2
+  mem: 3048
+  ip: 10.0.0.145/24
+  nameserver: 1.1.1.1
+  templatte: "cit-ubuntu-jammy"
+  description: "ansible host master" 
+  
+      
